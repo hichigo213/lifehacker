@@ -9,7 +9,7 @@
         </div>
         <div class="header-image-container">
             <div class="title-underlay">
-                <my-social-media></my-social-media>
+                <my-social-media v-if="$mq === 'sm'"></my-social-media>
             </div>
         </div>
     </header>
@@ -71,6 +71,8 @@
         background-color: #fff;
         width: 80%;
         height: 120px;
+        display: flex;
+        justify-content: center;
         @media (min-width: 321px) {
             height: 150px;
         }
