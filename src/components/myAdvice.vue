@@ -1,17 +1,19 @@
 <template>
     <div class="psiho">
-        <div class="psiho--img--container">
-            <img class="psiho--img" src="../assets/psiho.png">
-        </div>
-        <div>
-        <h2 class="psiho--title">Комментарий психолога</h2>
-        <div class="psiho--name--container">
-            <span class="psiho--name">
-                Вадим Захаров,
-                <br/>
-                психолог-консультант
-            </span>
-        </div>
+        <div class="psiho--info--container">
+            <div class="psiho--img--container">
+                <img class="psiho--img" src="../assets/psiho.png">
+            </div>
+            <div class="psiho--title--container">
+                <h2 class="psiho--title">Комментарий психолога</h2>
+                <div class="psiho--name--container">
+                    <span class="psiho--name">
+                        Вадим Захаров,
+                        <br/>
+                        психолог-консультант
+                    </span>
+                </div>
+            </div>
         </div>
         <div class="psiho--content">
             <p v-for="e in formattedText">
@@ -26,8 +28,7 @@
         name: "myAdvice",
         props:[
             'text'
-        ]
-        ,
+        ],
         computed:{
             formattedText(){
                 return this.text.split('\n').filter(e => (e !== ''))
@@ -40,10 +41,9 @@
     .psiho{
         display: flex;
         flex-direction: column;
-        position: relative;
-        top: 400px;
         width: 80%;
         align-self: center;
+        margin-top: 70px;
         &--img{
             border-radius: 50%;
             box-shadow: 0 0 15px #00bbd2;
@@ -78,6 +78,25 @@
         }
         p:last-of-type{
             margin-bottom: 0;
+        }
+    }
+    @media (min-width: 678px) {
+        .psiho{
+            &--info--container{
+                display: flex;
+            }
+            &--title{
+                margin-top: 10px;
+                &--container{
+                    margin-left: 40px
+                }
+            }
+            &--name{
+                text-align: unset;
+                &--container{
+                    justify-content: unset;
+                }
+            }
         }
     }
 </style>

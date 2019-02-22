@@ -37,6 +37,8 @@
     }
     @media (min-width: 1000px) {
         flex-direction: column;
+        position: absolute;
+        top: 490px;
     }
 }
 </style>

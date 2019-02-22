@@ -2,8 +2,9 @@
     <div id="app">
         <my-header></my-header>
         <my-social-media v-if="$mq !== 'sm'"></my-social-media>
-        <my-advice :text="psihoFirst"></my-advice>
-        <my-advice :text="psihoSecond"></my-advice>
+        <my-form></my-form>
+        <!--<my-advice :text="psihoFirst"></my-advice>-->
+        <!--<my-advice :text="psihoSecond"></my-advice>-->
     </div>
 </template>
 
@@ -11,13 +12,15 @@
 import myHeader from './components/myHeader'
 import mySocialMedia from './components/mySocialMedia'
 import myAdvice from './components/myAdvice'
+import myForm from './components/myForm'
 
 export default {
     name: 'app',
     components: {
         myHeader,
         mySocialMedia,
-        myAdvice
+        myAdvice,
+        myForm
     },
     data(){
         return {

@@ -28,6 +28,7 @@
 <style lang="scss" scoped>
     header{
         position: relative;
+        height: 404px;
     }
     .nav-bar{
         background-color: #00bbd2;
@@ -69,7 +70,7 @@
         position: absolute;
         bottom: 0;
         background-color: #fff;
-        width: 80%;
+        width: 90%;
         height: 120px;
         display: flex;
         justify-content: center;
