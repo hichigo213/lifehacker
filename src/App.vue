@@ -5,6 +5,11 @@
         <main>
             <my-title></my-title>
             <my-form></my-form>
+            <my-content-component1></my-content-component1>
+            <my-content-component2></my-content-component2>
+            <my-content-component3></my-content-component3>
+            <my-content-component4></my-content-component4>
+            <my-content-component5></my-content-component5>
         </main>
         <!--<my-advice :text="psihoFirst"></my-advice>-->
         <!--<my-advice :text="psihoSecond"></my-advice>-->
@@ -17,6 +22,11 @@ import mySocialMedia from './components/mySocialMedia'
 import myAdvice from './components/myAdvice'
 import myForm from './components/myForm'
 import myTitle from './components/myTitle'
+import myContentComponent1 from './components/myContentComponent1'
+import myContentComponent2 from './components/myContentComponent2'
+import myContentComponent3 from './components/myContentComponent3'
+import myContentComponent4 from './components/myContentComponent4'
+import myContentComponent5 from './components/myContentComponent5'
 
 
 export default {
@@ -26,7 +36,12 @@ export default {
         mySocialMedia,
         myAdvice,
         myForm,
-        myTitle
+        myTitle,
+        myContentComponent1,
+        myContentComponent2,
+        myContentComponent3,
+        myContentComponent4,
+        myContentComponent5
     },
     data(){
         return {
@@ -60,8 +75,11 @@ main{
     width: 90%;
     margin: auto;
     align-items: center;
-    @media (min-width: 1000px) {
+    @media (min-width: 678px) {
         width: 80%;
+    }
+    @media (min-width: 1000px) {
+        width: 70%;
     };
     @media (min-width: 1920px) {
         width: 60%;

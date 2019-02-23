@@ -36,16 +36,13 @@
 
 <style lang="scss" scoped>
     .form{
-        position: relative;
-        top: 10px;
-        z-index: 12;
         display: flex;
         flex-direction: column;
         width: 90%;
         height: 500px;
         align-self: center;
         justify-content: space-between;
-        box-shadow: 0 0 10px #4dd0df;
+        box-shadow: 0 0 20px #4dd0df;
         &--content{
             display: flex;
             flex-direction: column;
@@ -129,6 +126,7 @@
     @media (min-width: 1000px) {
         .form{
             flex-direction: row;
+            width: 85%;
         }
         .button--telegram{
             height: 100%;
