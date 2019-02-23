@@ -8,20 +8,14 @@
             <img class="logo--lifehacker" src="../assets/header-logos/lifehacker.png" alt="">
         </div>
         <div class="header-image-container">
-            <div class="title-underlay">
-                <my-social-media v-if="$mq === 'sm'"></my-social-media>
-            </div>
         </div>
+
     </header>
 </template>
 
 <script>
-    import mySocialMedia from './mySocialMedia'
     export default {
         name: "myHeader",
-        components: {
-            mySocialMedia
-        }
     }
 </script>
 
@@ -66,18 +60,7 @@
         display: flex;
         justify-content: center;
     }
-    .title-underlay{
-        position: absolute;
-        bottom: 0;
-        background-color: #fff;
-        width: 90%;
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        @media (min-width: 321px) {
-            height: 150px;
-        }
-    }
+
     @media(min-width: 1000px){
         .nav-bar{
             height: 490px;

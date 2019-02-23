@@ -129,7 +129,6 @@
     @media (min-width: 1000px) {
         .form{
             flex-direction: row;
-            width: 80%;
         }
         .button--telegram{
             height: 100%;

@@ -2,7 +2,10 @@
     <div id="app">
         <my-header></my-header>
         <my-social-media v-if="$mq !== 'sm'"></my-social-media>
-        <my-form></my-form>
+        <main>
+            <my-title></my-title>
+            <my-form></my-form>
+        </main>
         <!--<my-advice :text="psihoFirst"></my-advice>-->
         <!--<my-advice :text="psihoSecond"></my-advice>-->
     </div>
@@ -13,6 +16,8 @@ import myHeader from './components/myHeader'
 import mySocialMedia from './components/mySocialMedia'
 import myAdvice from './components/myAdvice'
 import myForm from './components/myForm'
+import myTitle from './components/myTitle'
+
 
 export default {
     name: 'app',
@@ -20,7 +25,8 @@ export default {
         myHeader,
         mySocialMedia,
         myAdvice,
-        myForm
+        myForm,
+        myTitle
     },
     data(){
         return {
@@ -44,8 +50,21 @@ body{
     margin: 0;
     font-family: Montserrat regular, sans-serif;
 }
-#app{
+#app {
     display: flex;
     flex-direction: column;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    @media (min-width: 1000px) {
+        width: 80%;
+    };
+    @media (min-width: 1920px) {
+        width: 60%;
+    }
 }
 </style>

@@ -41,7 +41,7 @@
     .psiho{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 90%;
         align-self: center;
         margin-top: 70px;
         &--img{
