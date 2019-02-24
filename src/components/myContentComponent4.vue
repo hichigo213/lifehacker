@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <my-content-title
-            :text="['Как понять', 'Что вы нашли своего']"
+            :text="['Как понять', 'Что вы нашли', 'своего человека']"
             :number="4"
             :img="'src/assets/content-images/content4.png'"
         >

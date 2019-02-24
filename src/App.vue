@@ -54,7 +54,8 @@ export default {
                 '\n' +
                 'Люди, которые приходят на терапию с сильным желанием найти партнёра, испытывают дискомфорт и фрустрацию, сталкиваясь с неудачей. А отпустив желание непременно реализоваться в сфере отношений, неожиданно легко находят спутника жизни.\n' +
                 '\n' +
-                'Ощущение готовности вступить в отношения может быть очень приятным. Но это не значит, что вы должны каждую минуту делать всё возможное и невозможное, чтобы найти их. Представьте себе, что отношения — это голубь, которого вы пытаетесь поймать. Если вы преследуете голубя, вы можете его напугать и он улетит. Но если просто протянуть руку и подождать, то, возможно, голубь сядет на неё сам.'
+                'Ощущение готовности вступить в отношения может быть очень приятным. Но это не значит, что вы должны каждую минуту делать всё возможное и невозможное, чтобы найти их. Представьте себе, что отношения — это голубь, которого вы пытаетесь поймать. Если вы преследуете голубя, вы можете его напугать и он улетит. Но если просто протянуть руку и подождать, то, возможно, голубь сядет на неё сам.',
+
         }
     }
 }
@@ -84,5 +85,46 @@ main{
     @media (min-width: 1920px) {
         width: 60%;
     }
+}
+.my-slide{
+    background-color: #fff;
+    padding: 80px 90px;
+    font-family: Montserrat regular, sans-serif;
+    .slide{
+        &--content{
+            line-height: 1.5em;
+        }
+        &--title{
+            font-family: Montserrat bold, sans-serif;
+        }
+    }
+    @media (max-width: 320px) {
+        padding: 20px 10px 0 10px;
+    }
+}
+.carousel__indicator{
+    opacity: 1!important;
+    bottom: 30px;
+    &:before{
+        background-color: #00bbd2!important;
+    }
+    &--active{
+        border-radius: 50%;
+        border: 1px solid #00bbd2;
+        box-sizing: border-box;
+        &:before{
+            width: 0.3rem !important;
+            height: 0.3rem !important;
+        }
+    }
+}
+.carousel__indicators--disc>.carousel__indicator[data-v-58e9dff8] {
+    width: 1.5rem !important;
+}
+.carousel__list{
+    box-shadow: 0 0 10px #00bbd2;
+    height: 480px;
+    max-width: 620px;
+    background-color: #fff;
 }
 </style>
