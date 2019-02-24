@@ -7,12 +7,12 @@
             <my-form></my-form>
             <my-content-component1></my-content-component1>
             <my-content-component2></my-content-component2>
+            <my-advice :text="psihoFirst"></my-advice>
             <my-content-component3></my-content-component3>
             <my-content-component4></my-content-component4>
             <my-content-component5></my-content-component5>
+            <my-advice :text="psihoSecond"></my-advice>
         </main>
-        <!--<my-advice :text="psihoFirst"></my-advice>-->
-        <!--<my-advice :text="psihoSecond"></my-advice>-->
     </div>
 </template>
 
