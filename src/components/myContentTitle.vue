@@ -24,6 +24,7 @@
         &--container{
             width: 320px;
             padding-bottom: 10px;
+            margin-top: 30px;
             margin-bottom: 14px;
             border-bottom: 5px solid #00bbd2;
             position: relative;
