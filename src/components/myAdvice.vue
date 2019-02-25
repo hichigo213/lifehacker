@@ -44,6 +44,9 @@
         width: 90%;
         align-self: center;
         margin-top: 70px;
+        @media (min-width: 1920px) {
+            width: 66%;
+        }
         &--img{
             border-radius: 50%;
             box-shadow: 0 0 15px #00bbd2;
@@ -87,6 +90,7 @@
             }
             &--title{
                 margin-top: 10px;
+                text-align: unset;
                 &--container{
                     margin-left: 40px
                 }

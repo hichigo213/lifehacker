@@ -41,7 +41,7 @@
         }
         &--number{
             position: absolute;
-            top: 0;
+            top: -20px;
             left: 28px;
             font-family: "Copyright House Industries Not Licensed for Desktop Use", sans-serif;
             font-size: 70px;

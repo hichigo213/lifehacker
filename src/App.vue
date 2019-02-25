@@ -4,7 +4,16 @@
         <my-social-media v-if="$mq !== 'sm'"></my-social-media>
         <main>
             <my-title></my-title>
+            <p class="contest-text">
+                Если вы уже нашли любовь, расскажите, как вам это удалось. Авторы четырёх лучших советов получат в подарок бытовую технику от SCARLETT: сохранить любовь проще, когда домашние дела занимают меньше времени.
+            </p>
+            <p class="contest-text">
+                Для участия в конкурсе авторизуйтесь с помощью профиля «ВКонтакте». С одного аккаунта можно
+            </p>
             <my-form></my-form>
+            <p class="contest-text">
+                Ваши советы мы собираем на специальной странице (ссылка на лендинг). Х апреля жюри SCARLETT выберет из них лучшие и подарит авторам призы.
+            </p>
             <my-content-component1></my-content-component1>
             <my-content-component2></my-content-component2>
             <my-advice :text="psihoFirst"></my-advice>
@@ -126,5 +135,17 @@ main{
     height: 480px;
     max-width: 620px;
     background-color: #fff;
+}
+.contest-text{
+    width: 80%;
+    &:first-of-type{
+        margin-top: 65px;
+        @media (max-width: 320px) {
+            margin-top: 75px;
+        }
+    }
+    @media (min-width: 1920px) {
+        width: 66%;
+    }
 }
 </style>
