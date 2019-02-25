@@ -21,6 +21,7 @@
             <my-content-component4></my-content-component4>
             <my-content-component5></my-content-component5>
             <my-advice :text="psihoSecond"></my-advice>
+            <my-footer></my-footer>
         </main>
     </div>
 </template>
@@ -36,7 +37,7 @@ import myContentComponent2 from './components/myContentComponent2'
 import myContentComponent3 from './components/myContentComponent3'
 import myContentComponent4 from './components/myContentComponent4'
 import myContentComponent5 from './components/myContentComponent5'
-
+import myFooter from './components/myFooter'
 
 export default {
     name: 'app',
@@ -50,7 +51,8 @@ export default {
         myContentComponent2,
         myContentComponent3,
         myContentComponent4,
-        myContentComponent5
+        myContentComponent5,
+        myFooter
     },
     data(){
         return {
@@ -78,6 +80,7 @@ body{
 #app {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 main{
     display: flex;
