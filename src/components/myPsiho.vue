@@ -25,7 +25,7 @@
 
 <script>
     export default {
-        name: "myAdvice",
+        name: "myPsiho",
         props:[
             'text'
         ],

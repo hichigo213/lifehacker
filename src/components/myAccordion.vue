@@ -1,15 +1,15 @@
 <template>
-    <div class="tab">
-        <div class="tab--header" @click="active = !active">
-            <div class="tab--title" >
+    <div class="accordion">
+        <div class="accordion--header" @click="active = !active">
+            <div class="accordion--title" >
                 <strong>{{title}}</strong>
             </div>
-            <div class="tab--toggle">
+            <div class="accordion--toggle">
                 <span v-show="!active">+</span>
                 <span v-show="active">-</span>
             </div>
         </div>
-        <div class="tab--content" v-show="active"><slot /></div>
+        <div class="accordion--content" v-show="active"><slot /></div>
     </div>
 </template>
 
@@ -28,7 +28,7 @@
 </script>
 
 <style lang="scss" scoped>
-.tab{
+.accordion{
     display: flex;
     flex-direction: column;
     align-items: center;

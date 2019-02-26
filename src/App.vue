@@ -16,11 +16,11 @@
             </p>
             <my-content-component1></my-content-component1>
             <my-content-component2></my-content-component2>
-            <my-advice :text="psihoFirst"></my-advice>
+            <my-psiho :text="psihoFirst"></my-psiho>
             <my-content-component3></my-content-component3>
             <my-content-component4></my-content-component4>
             <my-content-component5></my-content-component5>
-            <my-advice :text="psihoSecond"></my-advice>
+            <my-psiho :text="psihoSecond"></my-psiho>
             <my-footer></my-footer>
         </main>
     </div>
@@ -29,7 +29,7 @@
 <script>
 import myHeader from './components/myHeader'
 import mySocialMedia from './components/mySocialMedia'
-import myAdvice from './components/myAdvice'
+import myPsiho from './components/myPsiho'
 import myForm from './components/myForm'
 import myTitle from './components/myTitle'
 import myContentComponent1 from './components/myContentComponent1'
@@ -44,7 +44,7 @@ export default {
     components: {
         myHeader,
         mySocialMedia,
-        myAdvice,
+        myPsiho,
         myForm,
         myTitle,
         myContentComponent1,
